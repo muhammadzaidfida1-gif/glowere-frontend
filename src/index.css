@@ -46,45 +46,46 @@ body {
 }
 
 .launcher-btn {
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: var(--primary);
-  /* Solid primary color */
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #1a6b3a;
+  /* Solid brand green */
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s, background-color 0.2s;
 }
 
 .launcher-btn:hover {
-  transform: scale(1.1) rotate(5deg);
-  background-color: var(--primary-light);
+  transform: scale(1.05);
+  background-color: #248a4c;
 }
 
 .launcher-btn:active {
-  transform: scale(0.94);
+  transform: scale(0.95);
 }
 
 .launcher-btn svg {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   fill: #fff;
 }
 
 .launcher-pulse {
   position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 16px;
-  height: 16px;
-  background: var(--gold);
+  top: 0px;
+  right: 0px;
+  width: 14px;
+  height: 14px;
+  background: #f5c842;
+  /* Pure yellow dot */
   border-radius: 50%;
-  border: 2px solid var(--bg-dark);
-  animation: pulse 2s infinite;
+  border: 2px solid #0f1a12;
+  z-index: 10;
 }
 
 @keyframes pulse {
