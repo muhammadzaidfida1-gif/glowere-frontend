@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Force fixed names for embedding
-        entryFileNames: `assets/glowere-bot.js`,
+        entryFileNames: `assets/main.js`,
         chunkFileNames: `assets/main.js`,
         assetFileNames: `assets/[name].[ext]`,
       },
