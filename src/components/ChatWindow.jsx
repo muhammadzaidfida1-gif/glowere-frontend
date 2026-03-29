@@ -21,6 +21,13 @@ function ProductCard({ product }) {
             <div className="product-card-name">🌿 {product.name}</div>
             {product.tagline && <div className="product-card-tagline">{product.tagline}</div>}
             {product.usage && <div className="product-card-usage">📌 {product.usage}</div>}
+            {product.url && (
+                <div style={{ marginTop: '10px' }}>
+                    <a href={product.url} target="_blank" rel="noopener noreferrer" className="product-card-link">
+                        View Product 🛍️
+                    </a>
+                </div>
+            )}
         </div>
     )
 }
